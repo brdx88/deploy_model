@@ -58,7 +58,9 @@ def predict():
     result = {
         'model':'XGB-Credit-Risk',
         "version": '1.0.0',
-        "prediction": f"{result['data'][0]['proba']} {result['data'][0]['pred']}"
+		'score_proba': result['data'][0]['proba'],
+		'prediction': result['data'][0]['pred'],
+		'result': str(round(result['data'][0]['proba'], 3))
 
         # "score_proba":result[0],            
             # TypeError: Object of type float32 is not JSON serializable --> use str(result[0])
