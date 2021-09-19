@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="assets/code.js"></script>
+    <title>Predict the Applicant</title>
+  </head>
+
+  <body>
+    <br>
+    <a href="index.html"><img class="logo" src="assets/final_v1.png" alt=""></a>
+    <br>
+    <div class="container main">
+  <div class="jumbotron" id="holder">
+    <h1 class='main_heading'> Credit Risk Model</h1>
+    <h3>Finding the applicant would be default or non-default applicant.</h3>
+    <br>
+    <div class="instructions">
+      <h2>Instructions: </h2>
+      <p>1. asdft</p>
+      <p>2. fdsa.</p>
+    </div>
+    <br>
+
+    <br>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Age:</label>
+        <div class="col-sm-10">
+          <input type="number" name="person_age" min="0" max="125" step=1 required=True class="form-control" id="feature1" placeholder="e.g. 21, or 52, or 75" >
+        </div>
+      </div>
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Income:</label>
+          <div class="col-sm-10">
+            <input type="number" name="person_income" min="0" max="10000000" step=1 required=True class="form-control" id="feature1" placeholder="e.g. 168000, or 1500, or 2512315" >
+          </div>
+        </div>
+
+
+        
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Employment Length:</label>
+            <div class="col-sm-10">
+              <input type="number" name="person_emp_length" min="0" max="80" step=0.1 required=True class="form-control" id="feature1" placeholder="e.g. 17.0, or 15.5, or 35.7" >
+            </div>
+          </div>
+
+
+
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Loan Amount:</label>
+              <div class="col-sm-10">
+                <input type="number" name="loan_amnt" min="0" max="1000000" step=1 required=True class="form-control" id="feature1" placeholder="e.g. 25000, or 300000, or 500" >
+              </div>
+            </div>
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Loan Interest Rate:</label>
+                <div class="col-sm-10">
+                  <input type="number" name="loan_int_rate" min="0" max="35.0" step=0.01 required=True class="form-control" id="feature1" placeholder="e.g. 16.45, or 23.50, or 7.05" >
+                </div>
+              </div>
+
+
+
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Historical Credit Length:</label>
+                    <div class="col-sm-10">
+                      <input type="number" name="cb_person_cred_hist_length" min="0" max="80" step=1 required=True class="form-control" id="feature1" placeholder="e.g. 21, or 52, or 75" >
+                    </div>
+                  </div>
+
+
+
+            <div class="form-group">
+              <div class="col-sm-10" style="width: 250px">
+                <label class="control-label col-sm-2" for="email">Home Ownership:</label>
+                <!-- <span class="input-group-text" style="width: 500px">Home Ownership:</span> -->
+                <select name="person_home_ownership" style="width: 500px" class="form-control" required="required" >
+                    <option value="RENT">Rent</option>
+                    <option value="MORTGAGE">Mortgage</option>
+                    <option value="OWN">Own</option>
+                    <option value="OTHER">Other</option>
+                    <option disabled selected hidden>Own or Mortgage or Rent or Other</option>
+                </select>
+              </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-10" style="width: 250px">
+                  <label class="control-label col-sm-2" for="email">Loan Intent:</label>
+                  <select name="loan_intent" style="width: 500px" class="form-control" required="required" >
+                      <option value="EDUCATION">Education</option>
+                      <option value="MEDICAL">Medical</option>
+                      <option value="VENTURE">Venture</option>
+                      <option value="PERSONAL">Personal</option>
+                      <option value="DEBTCONSOLIDATION">Debt Consolidation</option>
+                      <option value="HOMEIMPROVEMENT">Home Improvement</option>
+                      <option disabled selected hidden>Home Improvement, or Medical, or Education</option>
+                  </select>
+                </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-sm-10" style="width: 250px">
+                  <label class="control-label col-sm-2" for="email">Loan Grade:</label>
+                  <select name="loan_grade" style="width: 500px" class="form-control" required="required" >
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="G">G</option>
+                  <option disabled selected hidden>e.g. A, or C, or G</option>
+                </select>
+                </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-sm-10" style="width: 250px">
+                    <label class="control-label col-sm-2" for="email">Historical Default:</label>
+                    <select name="cb_person_default_on_file" style="width: 500px" class="form-control" required="required" >
+                        <option value="Y">Yes</option>
+                        <option value="N">No</option>
+                        <option disabled selected hidden>Yes or No</option>
+                    </select>
+                  </div>
+                  </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="button btn btn-default" style="background-color: rgb(4,122,133); color: whitesmoke">Submit</button>
+        </div>
+      </div>
+    </form>
+    <h2 class="result"></h2>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <div class="footer-copyright text-center py-3">
+    <div class="bottom">
+      <p><a href="#">Time Traveller | Bitcoin Price Predictor</a></p>
+    </div>
+  </div>
+
+</footer>
+<!-- Footer -->
+
+
+  </body>
+</html>
