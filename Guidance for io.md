@@ -1,8 +1,9 @@
-GUIDANCE FOR INPUT AND OUTPUT FORMAT
+## GUIDANCE FOR INPUT AND OUTPUT FORMAT
 
-1. INPUT
+### 1. INPUT
+
 Your input must be JSON like this below for example:
-"""
+```JSON
 {
 	"person_age":24,
 	"person_income":168000,
@@ -16,14 +17,15 @@ Your input must be JSON like this below for example:
 	"cb_person_default_on_file":"N",
 	"cb_person_cred_hist_length":3
 	}
-"""
+```
 
-2. Output
+### 2. OUTPUT
+
 The expected output should be like this below:
-"""
+```PYTHON
 {
     "model": "XGB-Credit-Risk",
     "prediction": "87.76% Non-default",
     "version": "1.0.0"
 }
-"""
+```
