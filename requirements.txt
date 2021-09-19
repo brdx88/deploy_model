@@ -7,4 +7,3 @@ numpy
 gunicorn
 xgboost
 flask.scaffold
-Flask-Cors==3.0.10
