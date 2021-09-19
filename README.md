@@ -1,4 +1,7 @@
-# Credit Risk Model
+# CREDIT RISK MODEL
+
+## Live Credit Risk Predictor
+## https://credit-risk-brianic.herokuapp.com/
 
 ## Business Problems
 As a Financing Company, the user wants to build a credit scoring model to predict whether the client will default or not after their loan application.
