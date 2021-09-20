@@ -2,6 +2,7 @@
 
 ## Live Credit Risk Predictor
 ## https://credit-risk-brianic.herokuapp.com/
+![1](https://github.com/brdx88/trial_deploy_model/blob/main/credit_risk_live.png)
 
 ## Business Problems
 As a Financing Company, the user wants to build a credit scoring model to predict whether the client will default or not after their loan application.
