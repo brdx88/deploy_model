@@ -10,6 +10,22 @@ As a Financing Company, the user wants to build a credit scoring model to predic
 ## Business Goals
 Research and develop the model to predict applicants whether the applicant will default or not, and also find the best metrics since this is an imbalance class dataset.
 
+## Data Dictionary
+
+| Feature Name | Description |
+| --- | --- |
+| person_age | Age |
+| person_income | Annual income |
+| person_home_ownership | Home ownership |
+| person_emp_length | Employment length (in years) |
+| loan_intent | Loan intent |
+| loan_amnt | Loan amount |
+| loan_int_rate | Interest rate |
+| loan_percent_income | Percent income by loan |
+| cb_person_default_on_file | Historical default |
+| cb_person_cred_hist_length | Credit history length |
+| loan_status | Loan status |
+
 ## Results
 ```bash
     +----------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -52,7 +68,7 @@ Guidance for input and output format when access it on web.
 ### 1. Input Format
 Endpoint: `https://credit-risk-brianic.herokuapp.com/predict-api`.
 
-Using `'POST'` method, your input must be JSON like this below for example:
+Using `'POST'` method, input variables like the data dictionary above except *loan status*. It must be JSON like this below for example:
 ```JSON
 {
 	"person_age":24,
