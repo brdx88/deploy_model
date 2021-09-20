@@ -50,6 +50,8 @@ After tuning the models and get each metrics, we could predict the holdout sampl
 Guidance for input and output format when access it on web.
 
 ### 1. Input Format
+Endpoint: `https://credit-risk-brianic.herokuapp.com/predict-api`.
+
 Using `'POST'` method, your input must be JSON like this below for example:
 ```JSON
 {
